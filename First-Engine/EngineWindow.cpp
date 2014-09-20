@@ -2,6 +2,8 @@
 
 bool EngineWindow::InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWidth, int pWindHeight, bool isWindowed,WNDPROC WindProc)
 {
+	
+
 	WNDCLASSEX WindClass;
 	WindClass.cbSize = sizeof(WNDCLASSEX);
 	WindClass.style = CS_HREDRAW | CS_VREDRAW;
@@ -45,4 +47,5 @@ bool EngineWindow::InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWi
 
 	ShowWindow(gHwND, pShowWnd);
 	UpdateWindow(gHwND);
+	return true;
 }
