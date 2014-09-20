@@ -11,5 +11,8 @@
 #include "windows.h"
 
 HWND gHwND = NULL;
+int WindWidth = 1280;
+int WindHeight = 1024;
 
 #endif
+

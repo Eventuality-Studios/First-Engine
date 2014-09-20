@@ -13,8 +13,12 @@
 #include "EngineCommon.h"
 class EngineWindow
 {
-	bool InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWidth, int pWindHeight, bool isWindowed,WNDPROC WindProc);
+
+
+public:
+	bool InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWidth, int pWindHeight, bool isWindowed, WNDPROC WindProc);
 
 };
 
 #endif
+

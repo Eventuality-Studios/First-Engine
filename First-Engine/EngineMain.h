@@ -13,8 +13,10 @@
 
 class Engine
 {
+	EngineWindow Window;
 
-	bool EngineInit(HINSTANCE hInInstance, HINSTANCE hPrevInstance);
+	bool EngineInit(HINSTANCE hInInstance,WNDPROC pProcFunc,int ShowWnd);
 	void EngineCleanup();
 };
 #endif
+
