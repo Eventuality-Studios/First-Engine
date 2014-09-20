@@ -10,6 +10,6 @@
 
 #include "windows.h"
 
-HWND hwnd = NULL;
+HWND gHwND = NULL;
 
 #endif
