@@ -13,6 +13,7 @@
 
 class Engine
 {
+	HWND EngineHwND;
 	EngineWindow Window;
 	public:
 		bool EngineInit(HINSTANCE hInInstance,WNDPROC pProcFunc,int ShowWnd);

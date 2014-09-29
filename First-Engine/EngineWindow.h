@@ -1,7 +1,7 @@
 /**
  * Created By:Rookie
  *
- *Contains the Window Creation code.
+ * Contains the Window Creation code.
  *
  *
  **/
@@ -10,13 +10,13 @@
 
 
 
-#include "EngineCommon.h"
+#include"windows.h"
 class EngineWindow
 {
 
 
 public:
-	bool InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWidth, int pWindHeight, bool isWindowed, WNDPROC WindProc);
+	bool InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWidth, int pWindHeight, bool isWindowed,WNDPROC WindProc,HWND pHwND);
 
 };
 

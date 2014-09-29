@@ -1,6 +1,6 @@
 #include "EngineWindow.h"
 
-bool EngineWindow::InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWidth, int pWindHeight, bool isWindowed,WNDPROC WindProc)
+bool EngineWindow::InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWidth, int pWindHeight, bool isWindowed,WNDPROC WindProc,HWND pHwND)
 {
 	
 
@@ -25,7 +25,7 @@ bool EngineWindow::InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWi
 		return false;
 	}
 
-	gHwND = CreateWindowEx(
+    pHwND = CreateWindowEx(
 		NULL,
 		L"First Engine",
 		L"First Engine",
@@ -38,14 +38,15 @@ bool EngineWindow::InitializeWind(HINSTANCE pInstance, int pShowWnd, int pWindWi
 		NULL
 		);
 
-	if (!gHwND)
+	
+	if (!pHwND)
 	{
 		MessageBox(NULL, L"Error creating window",
 			L"Error", MB_OK | MB_ICONERROR);
 		return false;
 	}
 
-	ShowWindow(gHwND, pShowWnd);
-	UpdateWindow(gHwND);
+	ShowWindow(pHwND, pShowWnd);
+	UpdateWindow(pHwND);
 	return true;
 }
